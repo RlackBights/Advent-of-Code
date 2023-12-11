@@ -1,0 +1,7 @@
+D:\Advent-of-Code\Day 1\Trebuchet\bin\Debug\Trebuchet.exe.config
+D:\Advent-of-Code\Day 1\Trebuchet\bin\Debug\Trebuchet.exe
+D:\Advent-of-Code\Day 1\Trebuchet\bin\Debug\Trebuchet.pdb
+D:\Advent-of-Code\Day 1\Trebuchet\obj\Debug\Trebuchet.csproj.AssemblyReference.cache
+D:\Advent-of-Code\Day 1\Trebuchet\obj\Debug\Trebuchet.csproj.CoreCompileInputs.cache
+D:\Advent-of-Code\Day 1\Trebuchet\obj\Debug\Trebuchet.exe
+D:\Advent-of-Code\Day 1\Trebuchet\obj\Debug\Trebuchet.pdb
