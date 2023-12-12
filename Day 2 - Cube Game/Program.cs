@@ -81,6 +81,9 @@ namespace AdventOfCode
         static void Main(string[] args)
         {
 
+            Console.WriteLine(num + num2);
+
+
             long gamePowers = 0;
 
             List<GameClass> games = new List<GameClass>();

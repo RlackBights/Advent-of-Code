@@ -5,3 +5,10 @@ D:\Advent-of-Code\Day 2\Cube Game\obj\Debug\Day02.csproj.AssemblyReference.cache
 D:\Advent-of-Code\Day 2\Cube Game\obj\Debug\Day02.csproj.CoreCompileInputs.cache
 D:\Advent-of-Code\Day 2\Cube Game\obj\Debug\Day02.exe
 D:\Advent-of-Code\Day 2\Cube Game\obj\Debug\Day02.pdb
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 2 - Cube Game\bin\Debug\Day02.exe.config
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 2 - Cube Game\bin\Debug\Day02.exe
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 2 - Cube Game\bin\Debug\Day02.pdb
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 2 - Cube Game\obj\Debug\Day02.csproj.AssemblyReference.cache
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 2 - Cube Game\obj\Debug\Day02.csproj.CoreCompileInputs.cache
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 2 - Cube Game\obj\Debug\Day02.exe
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 2 - Cube Game\obj\Debug\Day02.pdb

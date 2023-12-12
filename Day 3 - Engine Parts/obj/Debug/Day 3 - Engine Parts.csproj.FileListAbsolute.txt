@@ -5,3 +5,10 @@ D:\BNH\Advent-of-Code\Day 3 - Engine Parts\obj\Debug\Day 3 - Engine Parts.csproj
 D:\BNH\Advent-of-Code\Day 3 - Engine Parts\obj\Debug\Day 3 - Engine Parts.csproj.CoreCompileInputs.cache
 D:\BNH\Advent-of-Code\Day 3 - Engine Parts\obj\Debug\Day 3 - Engine Parts.exe
 D:\BNH\Advent-of-Code\Day 3 - Engine Parts\obj\Debug\Day 3 - Engine Parts.pdb
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 3 - Engine Parts\bin\Debug\Day 3 - Engine Parts.exe.config
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 3 - Engine Parts\bin\Debug\Day 3 - Engine Parts.exe
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 3 - Engine Parts\bin\Debug\Day 3 - Engine Parts.pdb
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 3 - Engine Parts\obj\Debug\Day 3 - Engine Parts.csproj.AssemblyReference.cache
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 3 - Engine Parts\obj\Debug\Day 3 - Engine Parts.csproj.CoreCompileInputs.cache
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 3 - Engine Parts\obj\Debug\Day 3 - Engine Parts.exe
+D:\BNH_Vizsgaremek\Advent-of-Code\Day 3 - Engine Parts\obj\Debug\Day 3 - Engine Parts.pdb
