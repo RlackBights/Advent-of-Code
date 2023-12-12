@@ -39,16 +39,15 @@ namespace AdventOfCode
 
     internal class Day03
     {
-        static void ProcessInput()
+        static List<PartNumber> ProcessInput()
             {
                 int rowIndex = 0;
                 bool lastCharNum = false;
 
-                List<List<PartNumber>> parts = new List<List<PartNumber>>();
+                List<PartNumber> parts = new List<PartNumber>();
                 List<int> numsInRows = new List<int>();
                 foreach (string row in File.ReadAllLines("input.txt"))
                 {
-                    parts.Add(new List<PartNumber>());
 
                     numsInRows.Add(0);
                     lastCharNum = false;
@@ -97,17 +96,18 @@ namespace AdventOfCode
                             }
                             stringcounter++;
                         }
-                        parts.Last().Add(new PartNumber(item, parts.Count - 1, stringcounter));
+                        parts.Add(new PartNumber(item, parts.Count - 1, stringcounter));
                         indexCounter++;
                     }
 
                     numsInRows.Clear();
                     rowIndex++;
                 }
+                return parts;
             }
-        static void GetCharacters()
+        static List<SpecialCharacters> GetCharacters()
         {
-            List<List<SpecialCharacters>> chars = new List<List<SpecialCharacters>>();
+            List<SpecialCharacters> chars = new List<SpecialCharacters>();
 
             string specialChars = "/*=%@&-+$#";
             int rowIndex = 0;
@@ -115,35 +115,32 @@ namespace AdventOfCode
 
             foreach (string row in File.ReadAllLines("input.txt"))
             {
-                chars.Add(new List<SpecialCharacters>());
                 colIndex = 0;
                 foreach (char c in row)
                 {
                     if (specialChars.Contains(c))
                     {
-                        chars.Last().Add(new SpecialCharacters(rowIndex, colIndex));
+                        chars.Add(new SpecialCharacters(rowIndex, colIndex));
                     }
                     colIndex++;
                 }
                 rowIndex++;
             }
 
-            foreach (var item in chars)
-            {
-                foreach (var item2 in item)
-                {
-                    Console.WriteLine(item2.row + "-" + item2.index);
-                }
-            }
-
-
+            return chars;
         }
 
         static void Main(string[] args)
         {
 
-            ProcessInput();
-            GetCharacters();
+            List<PartNumber> parts = ProcessInput();
+            List<SpecialCharacters> characters = GetCharacters();
+
+            foreach (PartNumber part in parts)
+            {
+                Console.WriteLine($"{part.value}: ");
+
+            }
 
         }
     }
