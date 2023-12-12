@@ -28,12 +28,20 @@ namespace AdventOfCode
     {
         public int row { get; private set; }
         public int index { get; private set; }
+        public List<PartNumber> neighbours { get; private set; }
 
         public SpecialCharacters(int row, int index)
         {
             this.row = row;
             this.index = index;
+            this.neighbours = new List<PartNumber>();
         }
+
+        public void AddNeigbour(PartNumber number)
+        {
+            neighbours.Add(number);
+        }
+
     }
 
 
@@ -46,6 +54,8 @@ namespace AdventOfCode
 
                 List<PartNumber> parts = new List<PartNumber>();
                 List<int> numsInRows = new List<int>();
+
+
                 foreach (string row in File.ReadAllLines("input.txt"))
                 {
 
@@ -55,7 +65,6 @@ namespace AdventOfCode
 
                     foreach (char c in row)
                     {
-
 
                         if (char.IsDigit(c))
                         {
@@ -96,7 +105,7 @@ namespace AdventOfCode
                             }
                             stringcounter++;
                         }
-                        parts.Add(new PartNumber(item, parts.Count - 1, stringcounter));
+                        parts.Add(new PartNumber(item, rowIndex, stringcounter));
                         indexCounter++;
                     }
 
@@ -109,7 +118,7 @@ namespace AdventOfCode
         {
             List<SpecialCharacters> chars = new List<SpecialCharacters>();
 
-            string specialChars = "/*=%@&-+$#";
+            string specialChars = "*";
             int rowIndex = 0;
             int colIndex = 0;
 
@@ -129,18 +138,64 @@ namespace AdventOfCode
 
             return chars;
         }
+        static bool IsNumInRange(int a, int b, int range)
+        {
+            return Math.Abs(a - b) <= range;
+        }
 
         static void Main(string[] args)
         {
 
             List<PartNumber> parts = ProcessInput();
             List<SpecialCharacters> characters = GetCharacters();
+            List<PartNumber> used = new List<PartNumber>();
 
-            foreach (PartNumber part in parts)
+            long finalNum = 0;
+
+            foreach (SpecialCharacters character in characters)
             {
-                Console.WriteLine($"{part.value}: ");
+                foreach (PartNumber part in parts)
+                {
+                    if (IsNumInRange(part.row, character.row, 1) && !used.Contains(part))
+                    {
+                        //Console.Write($"Found match in rows between {part.row} and {character.row} - ");
+                        if (IsNumInRange(part.startIndex, character.index, 1))
+                        {
+                            //finalNum += part.value;
+                            //Console.WriteLine($"Found {part.row}-{part.startIndex} and {character.row}-{character.index} to be adjacent. Current num: {finalNum}");
+                            character.AddNeigbour(part);
+                            used.Add(part);
+                        }
+                        else
+                        {
+                            //Console.WriteLine($"Found {part.row}-{part.startIndex} and {character.row}-{character.index} to be too far apart");
+                        }
 
+
+                        if (IsNumInRange(part.startIndex + part.value.ToString().Length - 1, character.index, 1) && !used.Contains(part))
+                        {
+                            //finalNum += part.value;
+                            character.AddNeigbour(part);
+                            //Console.WriteLine($"Found {part.row}-{part.startIndex} and {character.row}-{character.index} to be adjacent. Current num: {finalNum}");
+                            used.Add(part);
+                        }
+                        else
+                        {
+                            //Console.WriteLine($"Found {part.row} - {part.startIndex} and {character.row}-{character.index} to be too far apart");
+                        }
+                        //Console.WriteLine();
+                    }
+                }
             }
+
+            foreach (var item in characters.Where(x => x.neighbours.Count == 2))
+            {
+                Console.Write($"* at {item.row}-{item.index}, with a power of {item.neighbours[0].value * item.neighbours[1].value}\n");
+                finalNum += item.neighbours[0].value * item.neighbours[1].value;
+            }
+
+            Console.WriteLine($"\nThe final value is {finalNum}");
+
 
         }
     }
