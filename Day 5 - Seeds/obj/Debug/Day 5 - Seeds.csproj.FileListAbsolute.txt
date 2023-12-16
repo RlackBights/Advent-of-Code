@@ -1,0 +1,7 @@
+D:\Advent-of-Code\Day 5 - Seeds\bin\Debug\Day 5 - Seeds.exe.config
+D:\Advent-of-Code\Day 5 - Seeds\bin\Debug\Day 5 - Seeds.exe
+D:\Advent-of-Code\Day 5 - Seeds\bin\Debug\Day 5 - Seeds.pdb
+D:\Advent-of-Code\Day 5 - Seeds\obj\Debug\Day 5 - Seeds.csproj.AssemblyReference.cache
+D:\Advent-of-Code\Day 5 - Seeds\obj\Debug\Day 5 - Seeds.csproj.CoreCompileInputs.cache
+D:\Advent-of-Code\Day 5 - Seeds\obj\Debug\Day 5 - Seeds.exe
+D:\Advent-of-Code\Day 5 - Seeds\obj\Debug\Day 5 - Seeds.pdb

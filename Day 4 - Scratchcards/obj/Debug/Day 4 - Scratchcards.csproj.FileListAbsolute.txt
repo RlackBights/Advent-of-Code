@@ -1,0 +1,7 @@
+D:\Advent-of-Code\Day 4 - Scratchcards\bin\Debug\Day 4 - Scratchcards.exe.config
+D:\Advent-of-Code\Day 4 - Scratchcards\bin\Debug\Day 4 - Scratchcards.exe
+D:\Advent-of-Code\Day 4 - Scratchcards\bin\Debug\Day 4 - Scratchcards.pdb
+D:\Advent-of-Code\Day 4 - Scratchcards\obj\Debug\Day 4 - Scratchcards.csproj.AssemblyReference.cache
+D:\Advent-of-Code\Day 4 - Scratchcards\obj\Debug\Day 4 - Scratchcards.csproj.CoreCompileInputs.cache
+D:\Advent-of-Code\Day 4 - Scratchcards\obj\Debug\Day 4 - Scratchcards.exe
+D:\Advent-of-Code\Day 4 - Scratchcards\obj\Debug\Day 4 - Scratchcards.pdb
